@@ -1,0 +1,109 @@
+*, body{
+    margin: 0;
+    padding: 0;
+}
+.game_container{
+    max-width: 1000px;
+}
+.score{
+    position: relative;
+    background: black;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    height: 35px;
+    width: 100%;
+}
+.btnStart{
+    position: relative;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    top: -3em;
+    left: -1em;
+    float: right;
+}
+.board{
+    background: burlywood;
+    border: 1px solid black;
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    top: 2em;
+}
+
+.hideout{
+    position: relative;
+    display:inline-block;
+    margin: 10px;
+    width: 20%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    left: 50px;
+}
+.bricks{
+    background: chocolate;
+    z-index: 10;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.badGuy, .friend{
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    height: 250px;
+    top: 250px;
+    left: 0px;
+    width: 100%;
+    cursor: crosshair;
+    transform: all 0.5;
+}
+
+.badGuy{
+    background-image: url(/images/trump1.png);
+}
+.friend{
+    background-image: url(/images/bd2.png);
+}
+
+.hideout.up .badGuy{
+    top: 0;
+}
+
+.hideout.up2 .friend{
+    top: 0;
+}
+
+.gameOverScreen{
+    position: absolute;
+    width: 1000px;
+    background: red;
+    color: white;
+    z-index: 10;
+    font-size: 2em;
+    text-align: center;
+    height: 550px;
+    z-index: 20;
+    top: 0;
+}
+.restart{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    top: 14em;
+}
+.gameOverText{
+    position: relative;
+    top: 2.5em;
+    font-size: 2em;
+}
